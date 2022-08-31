@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/login',[\App\Http\Controllers\mainController::class, 'loginScreen']);
+Route::get('/signup',[\App\Http\Controllers\mainController::class, 'signupScreen']);
+
 Route::get('/', function () {
     return view('welcome');
 });
